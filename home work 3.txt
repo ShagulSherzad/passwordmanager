@@ -1,0 +1,148 @@
+package password;
+
+
+public class Password {
+public int length;
+String text;
+public Password(int tt){
+    this.length=tt;
+    
+}
+
+
+
+public Password(int tt,String ttt){
+    this.length=tt;
+    this.text=ttt;
+    
+}
+public void aa(){
+    System.out.println(this.length+" "+this.text);
+}
+public void a(){
+    System.out.println(this.length+" "+this.text);
+}
+public void w(){
+    System.out.println(this.length+" "+this.text);
+}
+public void ww(){
+    System.out.println(this.length+" "+this.text);
+}
+    
+    public static void main(String[] args) {
+      Data p=new Data(34,"password");
+      p.aa();
+      DataManager y=new DataManager(54,"user data");
+      y.a();
+      LoginManager t=new LoginManager(64,"login data");
+      t.w();
+      UserInterface q=new UserInterface(54,"interface data");
+      q.ww();
+    }
+    
+}
+*************************************************************************************************************************
+package password;
+
+
+public class Data extends Password{
+    public Data(int tt,String ttt){
+        super(tt,ttt);
+    }
+
+   
+
+   
+
+    public int getLength() {
+        return length;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setLength(int newlength) {
+        length = newlength;
+    }
+    public void setText(String newtext) {
+        text = newtext;
+    }
+
+    
+}
+************************************************************************************************************************
+package password;
+
+
+public class DataManager extends Password{
+     public DataManager(int tt,String ttt){
+        super(tt,ttt);
+    }
+     
+       public int getLength() {
+        return length;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setLength(int newlength) {
+        length = newlength;
+    }
+
+    public void setText(String newtext) {
+        newtext = text;
+    }
+}
+***********************************************************************************************************************
+package password;
+
+public class LoginManager extends Password{
+    public LoginManager(int tt,String ttt){
+        super(tt,ttt);
+    }
+
+    
+    
+    public int getLength() {
+        return length;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setLength(int newlength) {
+        length = newlength;
+    }
+
+    public void setText(String newtext) {
+        newtext = text;
+    }
+}
+*******************************************************************************************************************
+package password;
+
+
+public class UserInterface extends Password{
+     public UserInterface (int tt,String ttt){
+        super(tt,ttt);
+    }
+     public int getLength() {
+        return length;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setLength(int newlength) {
+        length = newlength;
+    }
+
+    public void setText(String newtext) {
+        newtext = text;
+    }
+}
