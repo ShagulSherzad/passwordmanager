@@ -1,0 +1,31 @@
+
+package shagul;
+
+import javax.swing.JOptionPane;
+
+
+public class Shagul {
+
+
+  
+    public static void main(String[] args) {
+       String X=JOptionPane.showInputDialog("what is your name?");
+       
+       String Y=JOptionPane.showInputDialog("Enter your first number");
+       
+       int Z1=Integer.parseInt(Y);
+       String D=JOptionPane.showInputDialog("Enter your second number");
+       
+       int Z2=Integer.parseInt(D);
+       int F=Z1+Z2;
+       
+       
+       JOptionPane.showMessageDialog(null, "Welcome "+X+" the sum is "+ F, " the sum of two numbers: " , JOptionPane.PLAIN_MESSAGE);
+    }
+    
+}
+       
+        
+    
+    
+
