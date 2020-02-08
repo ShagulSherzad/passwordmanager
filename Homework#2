@@ -1,0 +1,171 @@
+
+package login;
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+
+public class Login {
+private JFrame frame;
+  
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable(){
+            public void run(){
+                try{
+                    Login window=new Login();
+                    window.frame.setVisible(true);
+                }
+                catch(Exception e){
+                    e.printStackTrace();
+                }
+            }
+            
+        }
+        );
+    }
+    private JTextField username;
+    private JPasswordField passwordField;
+   
+public Login(){
+initialize();
+        
+}
+
+    private void initialize() {
+        frame =new JFrame();
+        frame.setBounds(100, 100,450, 300);
+       
+       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+       frame.getContentPane().setLayout(null);
+       frame.setBackground(Color.yellow);
+       JLabel lblusername =new JLabel("Username");
+       lblusername.setBounds(58, 97, 120, 23);
+       frame.getContentPane().add(lblusername);
+       
+       JLabel lblpassword =new JLabel("password");
+       lblpassword.setBounds(58, 146, 112, 23);
+       frame.getContentPane().add(lblpassword);
+       
+       username =new JTextField();
+     
+      username.setBounds(214, 98, 154, 23);
+      username.setBackground(Color.green);
+       frame.getContentPane().add(username);
+       username.setColumns(10);
+       
+       passwordField =new JPasswordField();
+       passwordField.setBounds(214, 147, 159, 22);
+       passwordField.setBackground(Color.green);
+       frame.getContentPane().add(passwordField);
+       
+       JButton btnLogin=new JButton("Login");
+   
+        
+       btnLogin.addActionListener(new ActionListener(){
+           
+       
+           public void actionPerformed(ActionEvent args0){
+               String uname=username.getText();
+               String psd=passwordField.getText();
+               if(uname.equals("name")&& psd.equals("password")){
+                JOptionPane.showMessageDialog(frame, "you are successfully logined");
+               }
+               else
+               {
+                   JOptionPane.showMessageDialog(frame, "Invalid username or password");
+               }
+             
+                       
+                       
+           }
+         });
+       
+           btnLogin.setBounds(171, 197, 89, 23);
+           frame.getContentPane().add(btnLogin);
+           
+           JButton btnCancel =new JButton("Cancel");
+           btnCancel.setBounds(353, 197, 89, 23);
+          frame.getContentPane().add(btnCancel);
+            btnCancel.addActionListener(new ActionListener(){
+           
+       
+           public void actionPerformed(ActionEvent args0){
+               String uname=username.getText();
+               String psd=passwordField.getText();
+              
+                JOptionPane.showMessageDialog(frame, "you are successfully canceled");
+               }
+              
+           });}}
+          
+           
+    
+
+
+        
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    
+
+
+
+        
+        
+        
+        
+    
+    
+    
+
